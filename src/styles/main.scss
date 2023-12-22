@@ -1,1 +1,8 @@
-@import './Home.scss';
+@use './components/Footer.scss';
+@use './components/Header.scss';
+@use './pages/Home.scss'; 
+
+body {
+    padding: 0;
+    margin: 0; 
+  }

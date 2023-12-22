@@ -1,0 +1,22 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    & .logo{
+        width: 145px;
+        height: 46.881px;
+        flex-shrink: 0;
+    }
+    & nav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 26px;
+flex: 1 0 0;
+        & a{
+            text-decoration: none;
+            color: #FF6060;
+        }
+        
+    }
+}
