@@ -1,1 +1,5 @@
-@import './Home.scss';
+@use './Setting.scss';
+@use './components/Footer.scss';
+@use './components/Header.scss';
+@use './pages/Home.scss'; 
+
