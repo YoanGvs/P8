@@ -1,0 +1,19 @@
+.banner {
+    padding: 0 1rem;
+    h1 {
+        background-image: url(../assets/IMG.png);
+        background-position: center;
+        background-size: cover;
+        background-color: #0000004d;
+        background-blend-mode: darken;
+        font-size: 48px;       
+        border-radius: 0.625rem;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; 
+        padding: 1.94rem 6.38rem 2rem 1rem;
+    }
+}

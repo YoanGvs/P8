@@ -1,16 +1,12 @@
-import { useState } from "react"
+import Banner from "../components/Banner"
+
 
 const Home = () => {
-    const [title, setTitle] = useState('')
-
-    const handleClick = () => {
-        setTitle('Yoan')
-    }
-
     return (
-        <div>
-            <h1 onClick={() => handleClick()}>Bienvenu {title}</h1>
-        </div>
+        <main>
+            <Banner />
+            
+        </main>
     )
 }
 
