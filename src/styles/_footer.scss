@@ -1,0 +1,16 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    background: #000;
+    & #logoFooter{
+        padding-top: 4rem;
+    }
+    & p{
+        color: white;
+        margin-bottom: 3.62rem;
+        max-width: 6.64rem;
+    }
+}
