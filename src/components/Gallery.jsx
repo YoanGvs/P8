@@ -24,6 +24,7 @@ const Gallery = () => {
                     title={flat.title}
                     cover={flat.cover}
                     key={flat.id}
+                    id={flat.id}
                     />
                 
                 ))}            
