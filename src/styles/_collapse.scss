@@ -1,0 +1,89 @@
+@use "./variable" as *;
+@use "./mixin" as *;
+
+.collapse-container {
+  @include center-flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1.87rem;
+}
+
+.collapsible {
+  width: 100%;
+}
+
+.collapsible-header {
+  background-color: $primary-color;
+  color: $color-text;
+  padding: 0px 10px;
+  @include center-flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.collapsible-icon {
+  transition: transform 0.3s ease-in-out;
+
+  svg {
+    height: 2em;
+    width: 2em;
+  }
+
+  &.open {
+    transform: rotate(-180deg); // Pointe vers le bas quand ouvert
+  }
+}
+
+.collapsible-content {
+  color: $primary-color;
+  border-radius: 0 0 5px 5px;
+  padding: 0 1em;
+  transform-origin: top;
+  transition: height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  height: 0; // initialisation de la hauteur à 0
+  opacity: 0;
+
+  &.open {
+    opacity: 1;
+    padding-top: 1em;
+    background-color: $color-background;
+  }
+
+  .collapsible-inner {
+    transform: scaleY(0);
+  }
+
+  &.open .collapsible-inner {
+    transform: scaleY(1);
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 2px;
+    }
+  }
+}
+
+@include respond-to("tablet") {
+  .collapse-container {
+    width: 92%;
+    gap: 1.25rem;
+  }
+}
+
+@include respond-to("mobile") {
+  .collapse-container {
+    width: 100%;
+  }
+}

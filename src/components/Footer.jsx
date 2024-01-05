@@ -1,4 +1,3 @@
-import React from 'react'
 import logoFooter from '../assets/logoFooter.svg'
 
 function Footer() {
