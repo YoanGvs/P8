@@ -26,7 +26,6 @@ const Collapsible = ({ title, children }) => {
       <div
         className="collapsible-header"
         onClick={toggleOpen}
-        // autres propriétés
       >
         {title}
         <span className={`collapsible-icon ${isOpen ? "open" : ""}`}>

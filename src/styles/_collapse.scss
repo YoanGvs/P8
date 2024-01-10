@@ -5,12 +5,8 @@
   @include center-flex;
   flex-direction: column;
   width: 80%;
-  margin: 0 auto;
+  padding: 1rem;
   gap: 1.87rem;
-}
-
-.collapsible {
-  width: 100%;
 }
 
 .collapsible-header {
@@ -83,7 +79,5 @@
 }
 
 @include respond-to("mobile") {
-  .collapse-container {
-    width: 100%;
-  }
+
 }
