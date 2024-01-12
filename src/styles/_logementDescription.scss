@@ -1,0 +1,93 @@
+.description {
+   color: #ff6060;
+   padding: 0 1rem;
+}
+
+.flat__owner-star {
+    color: grey;
+    font-size: 1.125rem;
+    & .on {
+        color: #ff6060;
+    }
+    
+}
+
+.flat__owner-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    & p{
+        margin: 0;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; /* 1.0695rem */
+    }
+}
+
+.flat__owner-badge{
+    border-radius: 2rem;
+    height: 3rem;
+    object-fit: cover;
+    margin-left: 0.5rem;
+}
+
+.owner{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.owner-desc{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 0.5rem;
+    align-items: center;
+}
+
+.flat__tag{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.725rem;
+}
+
+.tag{
+    margin: 0 0.5rem 0 0;
+    background: #ff6060;
+    padding: 0.25rem 1rem;
+    border-radius: 0.625rem;
+    height: 1.125rem;
+}
+
+.logementCollapse{
+    padding:0 1rem;
+}
+
+.collapsible{
+    margin-top: 1rem;
+}
+
+.flat__title{
+    & h2{
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; /* 1.60425rem */;
+    }
+    & h3{
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; /* 1.24775rem */
+    }
+
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    padding-right: 0.5rem;
+}

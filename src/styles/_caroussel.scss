@@ -1,0 +1,27 @@
+.carousel {
+    height : 16rem;
+    border-radius: 10px;
+    display: flex;
+    position : relative;
+    margin: 0 1rem;
+    & img{
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0.625rem;
+    } 
+    button{
+      position: absolute;
+      top: 50%;
+      background: none;
+      border: none;
+    }
+    & #nextArrow{
+      right: 0%;
+    }
+    & #previousArrow{
+      transform: scaleX(-1);
+    }
+  }
+  
+
+
