@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { MdExpandLess } from "react-icons/md";
-import PropTypes from "prop-types";
 
 const Collapsible = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,9 +38,5 @@ const Collapsible = ({ title, children }) => {
   );
 };
 
-Collapsible.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
 
 export default Collapsible;

@@ -1,0 +1,9 @@
+.AboutBanner{
+    padding: 0 1rem;
+    & img{
+        height: 7rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.625rem;
+    }
+}
