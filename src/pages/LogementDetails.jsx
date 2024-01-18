@@ -14,7 +14,7 @@ const LogementDetails = () => {
     }
 
     return (
-        <div className="Main">
+        <main>
             {isLoading ? (<div>Chargement...</div>) :
                 (
                     <>
@@ -45,7 +45,7 @@ const LogementDetails = () => {
                     </>
                 )
             }
-        </div>
+        </main>
     )
 }
 export default LogementDetails

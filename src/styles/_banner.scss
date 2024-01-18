@@ -1,5 +1,8 @@
+@use "./variable" as *;
+@use "./mixin" as *;
+
 .banner {
-    padding: 0 1rem;
+    
     h1 {
         background-image: url(../assets/IMG.png);
         background-position: center;
@@ -14,6 +17,20 @@
         font-style: normal;
         font-weight: 500;
         line-height: 100%; 
-        padding: 1.94rem 6.38rem 2rem 1rem;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        padding: 0 6rem 0 1rem;
+        @media (min-width: 768px) {
+            height: 13.9375rem;
+            border-radius: 1.5625rem;
+            text-align: center;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            padding: 0 7rem;
+            justify-content: center;
+            font-weight: 400;
+        }
     }
 }
