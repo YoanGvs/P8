@@ -24,6 +24,9 @@ const Carousel = ({ pictures }) => {
           <img src={ArrowIcon} alt="Previous" />
         </button>
       )}
+      <div className="carousel-position-indicator">
+                {currentIndex + 1} / {pictures.length}
+            </div>
       <img src={pictures[currentIndex]} alt={`Slide ${currentIndex}`} />
       {pictures.length > 1 && (
         <button onClick={goToNext} id='nextArrow'>

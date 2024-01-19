@@ -82,3 +82,12 @@
 @include respond-to("mobile") {
 
 }
+
+.logementCollapse{
+  @media (min-width:1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+  
+}

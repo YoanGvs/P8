@@ -21,7 +21,16 @@
     & #previousArrow{
       transform: scaleX(-1);
     }
-  }
+    & .carousel-position-indicator{
+      position: absolute;
+      top: 92%;
+      left: 50%;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      }
+    }
+
   
 
 

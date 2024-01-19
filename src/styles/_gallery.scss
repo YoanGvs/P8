@@ -2,5 +2,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
 
+    @media (min-width:1440px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        justify-items: center;
+        margin: 2.6rem 0;
+        background: #F6F6F6;
+        padding: 3.5rem 3rem;
+        border-radius: 1.565rem;
+        gap: 2rem;
+    }
 }

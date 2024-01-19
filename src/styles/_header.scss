@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
+    @media (min-width: 1440px) {
+        padding: 2.81rem 6.25rem 0;
+    }
     .logo{
         max-width: 9rem;
         max-height: 2.93rem;

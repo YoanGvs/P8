@@ -18,6 +18,7 @@ const LogementDescription = ({ title, location, tags, badge, rate, host }) => {
                         <p>{firstName}</p>
                         <p>{lastName}</p>
                     </div>
+                    
                     <img src={badge} alt="" className="flat__owner-badge" />
                 </div>                
                 <div className="flat__owner-star">
