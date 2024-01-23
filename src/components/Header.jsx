@@ -1,16 +1,20 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logoHeader from '../assets/logo.svg';
 
 function Header() {
-    return (
-        <div className="Header">
-            <img src={logoHeader} alt="Logo" className='logo' />
-            <nav>
-                <Link to="/">ACCUEIL</Link>
-                <Link to="/about">A PROPOS</Link>
-            </nav>
-        </div>
-    );
+  return (
+    <div className="Header">
+      <img src={logoHeader} alt="Logo" className="logo" />
+      <nav>
+        <NavLink to="/" activeclassname="active">
+          Accueil
+        </NavLink>
+        <NavLink to="/about" activeclassname="active">
+          À Propos
+        </NavLink>
+      </nav>
+    </div>
+  );
 }
 
 export default Header;

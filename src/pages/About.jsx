@@ -1,10 +1,10 @@
 
 import Collapsible from "../components/Collapsible"; 
-import AboutBanner from "../components/AboutBanner"
+import Banner from "../components/Banner"
 const About = () => {
   return (
-    <div className="About">
-      <AboutBanner />    
+    <main className="About">
+      <Banner page="about" />    
       <div className="collapse-container">
         <Collapsible title="Fiabilité">
           <p>{"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiés par nos équipes."}</p>
@@ -23,7 +23,7 @@ const About = () => {
           </p>
         </Collapsible>
       </div>
-    </div>
+    </main>
   );
 };
 

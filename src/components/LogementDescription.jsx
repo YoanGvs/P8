@@ -4,6 +4,8 @@ const LogementDescription = ({ title, location, tags, badge, rate, host }) => {
     const [firstName, lastName] = host.split(" ")
     return (
         <div className="description"> 
+
+        <div className="title-section">
             <div className="flat__title">
                 <h2>{title}</h2>
                 <h3>{location}</h3>
@@ -12,6 +14,10 @@ const LogementDescription = ({ title, location, tags, badge, rate, host }) => {
             <div className="flat__tag">
                 {tags.map((tag) => (<span key={tag} className="tag">{tag}</span>))}
             </div>
+        </div>
+            
+
+
             <div className="owner">
                 <div className="owner-desc">
                     <div className="flat__owner-name">

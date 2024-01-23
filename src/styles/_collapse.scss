@@ -2,11 +2,12 @@
 @use "./mixin" as *;
 
 .collapse-container {
-  @include center-flex;
-  flex-direction: column;
-  width: 80%;
-  padding: 1rem;
-  gap: 1.87rem;
+
+  width: 100%;
+  @media (min-width: 1440px) {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 .collapsible-header {
@@ -18,10 +19,15 @@
   cursor: pointer;
   border-radius: 5px;
   height: 1.875rem;
+  @media (min-width: 1440px) {
+    font-size: 1.5rem;
+    padding: 0.625rem 1rem;
+  }
 }
 
 .collapsible-icon {
   transition: transform 0.3s ease-in-out;
+  transform: rotate(-90deg);
 
   svg {
     height: 2em;
@@ -29,14 +35,14 @@
   }
 
   &.open {
-    transform: rotate(-180deg); // Pointe vers le bas quand ouvert
+    transform: rotate(90deg); // Pointe vers le bas quand ouvert
   }
 }
 
 .collapsible-content {
   color: $primary-color;
   border-radius: 0 0 5px 5px;
-  padding: 0 1em;
+  padding: 0 1rem;
   transform-origin: top;
   transition: height 0.3s ease, opacity 0.3s ease;
   overflow: hidden;
@@ -45,7 +51,7 @@
 
   &.open {
     opacity: 1;
-    padding-top: 1em;
+    padding: 1rem;
     background-color: $color-background;
   }
 
@@ -60,6 +66,9 @@
   p {
     margin: 0;
     padding: 0;
+    @media (min-width: 1440px){
+      font-size: 1.125rem;
+    }
   }
 
   .no-bullets {
@@ -72,16 +81,8 @@
   }
 }
 
-@include respond-to("tablet") {
-  .collapse-container {
-    width: 92%;
-    gap: 1.25rem;
-  }
-}
 
-@include respond-to("mobile") {
 
-}
 
 .logementCollapse{
   @media (min-width:1440px) {

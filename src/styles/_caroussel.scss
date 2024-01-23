@@ -4,6 +4,9 @@
     display: flex;
     position : relative;
     margin: 0 1rem;
+    @media (min-width: 1440px) {
+      height: 25.9375rem;
+    }
     & img{
       width: 100%;
       object-fit: cover;
@@ -17,9 +20,20 @@
     }
     & #nextArrow{
       right: 0%;
+      
+      & img{
+        @media (min-width:1440px) {
+          height: 5rem;
+        }
+      }
     }
     & #previousArrow{
       transform: scaleX(-1);
+      & img{
+        @media (min-width:1440px) {
+          height: 5rem;
+        }
+      }
     }
     & .carousel-position-indicator{
       position: absolute;

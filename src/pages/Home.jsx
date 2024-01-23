@@ -6,7 +6,7 @@ import Gallery from "../components/Gallery"
 const Home = () => {
     return (
         <main>
-            <Banner />
+            <Banner page="home" />
             <Gallery />
         </main>
     )

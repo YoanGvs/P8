@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { MdExpandLess } from "react-icons/md";
+import arrow from '../assets/arrow.svg'; // replace with the actual path to your image
 
 const Collapsible = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +27,7 @@ const Collapsible = ({ title, children }) => {
         onClick={toggleOpen}
       >
         {title}
-        <span className={`collapsible-icon ${isOpen ? "open" : ""}`}>
-          <MdExpandLess />
-        </span>
+        <img src={arrow} alt="arrow" className={`collapsible-icon ${isOpen ? "open" : ""}`} />
       </div>
       <div id={contentId} className={`collapsible-content ${isOpen ? "open" : ""}`} ref={contentRef} style={{ height: `${height}px` }}>
         <div className="collapsible-inner">{children}</div>
@@ -37,6 +35,5 @@ const Collapsible = ({ title, children }) => {
     </div>
   );
 };
-
 
 export default Collapsible;
