@@ -8,7 +8,7 @@ function Banner({ page }) {
             {page !== 'about' ? 
             <div className= 'image-container'>
                 <img src= {homeBackground} alt="banner" />
-                <p>Chez vous, partout et ailleurs</p>
+                <p>Chez vous, <br /> partout et ailleurs</p>
             </div>
             : 
             <div className= 'image-container'>
