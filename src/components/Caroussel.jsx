@@ -19,21 +19,21 @@ const Carousel = ({ pictures }) => {
 
   return (
     <div className="carousel">
-      {pictures.length > 1 && (
+    {pictures.length > 1 && (
+      <>
         <button onClick={goToPrevious} id='previousArrow'>
           <img src={ArrowIcon} alt="Previous" />
         </button>
-      )}
-      <div className="carousel-position-indicator">
-                {currentIndex + 1} / {pictures.length}
-            </div>
-      <img src={pictures[currentIndex]} alt={`Slide ${currentIndex}`} />
-      {pictures.length > 1 && (
+        <div className="carousel-position-indicator">
+          {currentIndex + 1} / {pictures.length}
+        </div>
         <button onClick={goToNext} id='nextArrow'>
           <img src={ArrowIcon} alt="Next" />
         </button>
-      )}
-    </div>
+      </>
+    )}
+    <img src={pictures[currentIndex]} alt={`Slide ${currentIndex}`} />
+  </div>
   );
 };
 
