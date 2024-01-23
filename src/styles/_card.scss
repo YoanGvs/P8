@@ -1,17 +1,19 @@
 .card {
     margin: 0 0 1.34rem;
-    min-height: 16rem;
+    height: 16rem;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     justify-content: flex-end;
     border-radius: 0.625rem;
     background-color: #FF6060; 
-    min-width: 19rem;
+    width: 19rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+    @media (max-width: 720px) {
+        width: 100%;
+    }
     
     & h2{
         color: white;
@@ -20,9 +22,7 @@
         
         line-height: 1.6rem;
         margin: 0rem;   
-        
-        @media (max-width: 768px) {
-            max-width: 10rem;
-        }
+        max-width: 10rem;
+
     }
 }

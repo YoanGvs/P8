@@ -1,6 +1,10 @@
 .description {
    color: #ff6060;
    padding: 0 1rem;
+   @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+   }
 }
 
 .flat__owner-star {
@@ -22,6 +26,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: 142.6%; /* 1.0695rem */
+        @media (min-width:1440px) {
+            font-size: 1.125rem;
+        }
     }
 }
 
@@ -30,6 +37,9 @@
     height: 3rem;
     object-fit: cover;
     margin-left: 0.5rem;
+    @media (min-width:1440px) {
+        height: 4rem;
+    }
 }
 
 .owner{
@@ -38,6 +48,11 @@
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
+    @media (min-width:1440px) {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
 }
 
 .owner-desc{
@@ -77,12 +92,19 @@
         font-style: normal;
         font-weight: 500;
         line-height: 142.6%; /* 1.60425rem */;
+        @media (min-width: 1440px) {
+            font-size: 2.25rem;
+            margin: 1rem 0 -1rem;
+        }
     }
     & h3{
         font-size: 0.875rem;
         font-style: normal;
         font-weight: 500;
         line-height: 142.6%; /* 1.24775rem */
+        @media (min-width: 1440px) {
+            font-size: 1.125rem;
+        }
     }
 
 }

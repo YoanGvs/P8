@@ -1,8 +1,9 @@
 #gallery{ 
     display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+
 
     @media (min-width:1440px) {
         display: grid;

@@ -12,6 +12,8 @@
     & p{
         color: white;
         margin-bottom: 3.62rem;
-        max-width: 6.64rem;
+        @media (max-width: 1439px ) {
+            max-width: 6.64rem;
+        }
     }
 }
