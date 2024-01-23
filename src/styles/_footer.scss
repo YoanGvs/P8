@@ -12,8 +12,13 @@
     & p{
         color: white;
         margin-bottom: 3.62rem;
-        @media (max-width: 1439px ) {
-            max-width: 6.64rem;
+        max-width: 6.64rem;
+        
+            
+        @media (min-width: 1440px ) {
+            margin: 2.62rem;
+            font-size: 1.5rem;
+            max-width: 100%;
         }
     }
 }

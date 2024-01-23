@@ -35,7 +35,7 @@ const LogementDetails = () => {
                                 </p>
                             </Collapsible> 
                             <Collapsible title="Équipements">
-                                <ul>
+                                <ul className="list">
                                     {data.equipments.map((item, index) => (
                                         <li key={index}>{item}</li>
                                     ))}
