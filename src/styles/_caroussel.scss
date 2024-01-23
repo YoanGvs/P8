@@ -42,7 +42,12 @@
       color: white;
       font-size: 1rem;
       font-weight: 500;
+      @media (max-width: 1440px) {
+        display: none;
+        
       }
+      }
+      
     }
 
   
